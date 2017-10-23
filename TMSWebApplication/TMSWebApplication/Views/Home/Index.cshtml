@@ -1,0 +1,141 @@
+﻿<div class="banner-container full-width" ng-controller="bannerController">
+    <div class="image-container col-md-8">
+        <div class="banner-image"></div>
+    </div>
+    <div class="banner-content col-md-4" id="calculator">
+        <h1>SERVICE CALCULATOR</h1>
+        <div class="calculate-container">
+            <label>Load Type</label>
+            <select class="col-md-12" ng-model="calculation.type" ng-options="type.cat for type in types"></select>
+            <label>Weight</label>
+            <input class="col-md-12" type="number" ng-model="calculation.weight" />
+            <br />
+            <label>Length <br /><input class="small-input" type="number" ng-model="calculation.length" /></label>
+            <label>Height <br /><input class="small-input" type="number" ng-model="calculation.height" /></label>
+            <label>Width <br /><input class="small-input" type="number" ng-model="calculation.width" /></label>
+            <br>
+            <label>Destination:</label>
+            <div class="radio">
+                <label><input type="radio" value="saigon" ng-model="calculation.destitation">Sai Gon</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" value="suburb" ng-model="calculation.destitation">Sai Gon 's suburbs</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" value="cities" ng-model="calculation.destitation">Other cities</label>
+            </div>
+
+            <label>Estimated Shipping Cost:<br /><a>AUD {{calculation.cost()}}</a></label>
+        </div>
+        <div id="service"></div>
+    </div>
+</div>
+
+<div class="service-container col-md-12" id="startchange">
+    <h1>The smoother way to mannage your global supply chain</h1>
+    <div class="service-content container full-width">
+        <div class="service-element col-md-4">
+            <div class="service-icon" id="logistic-icon"></div>
+            <h2>Instant Quotes & Booking</h2>
+            <span>Enormous time saving on your international trade. No more hanging around.</span>
+        </div>
+        <div class="service-element col-md-4">
+            <div class="service-icon" id="transport-icon"></div>
+            <h2>Real-Time Track & Trace</h2>
+            <span>Never wonder where your goods are. Real-time updated delivery times and status events.</span>
+        </div>
+        <div class="service-element col-md-4">
+            <div class="service-icon" id="packaging-icon"></div>
+            <h2>Supply Chain Analytics</h2>
+            <span>Compare Quickest, Cheapest or First to arrive. Never pay more than you have to.</span>
+        </div>
+        <div class="service-element col-md-4">
+            <div class="service-icon" id="flight-icon"></div>
+            <h2>Instant Quotes & Booking</h2>
+            <span>Enormous time saving on your international trade. No more hanging around.</span>
+        </div>
+        <div class="service-element col-md-4">
+            <div class="service-icon" id="delivery-icon"></div>
+            <h2>Real-Time Track & Trace</h2>
+            <span>Never wonder where your goods are. Real-time updated delivery times and status events.</span>
+        </div>
+        <div class="service-element col-md-4">
+            <div class="service-icon" id="ship-icon"></div>
+            <h2>Supply Chain Analytics</h2>
+            <span>Compare Quickest, Cheapest or First to arrive. Never pay more than you have to.</span>
+        </div>
+    </div>
+    <div id="process"></div>
+</div>
+
+<div class="process-container col-md-12" ng-controller="processController">
+    <h1>The All-In-One Simple Supply Chain Solution</h1>
+    <div class="process-session container-fluid">
+        <div class="process-image col-md-7" id="process-{{processSelected}}"></div>
+        <div class="process-option col-md-5">
+            <div class="process-content" ng-click="selectProcess('milk')">
+                <h2>MILK POWDER</h2>
+                <span>No more waiting around for multiple forwarders to get back to you only to be disappointed with their price.</span>
+            </div>
+            <div class="process-content" ng-click="selectProcess('supply')">
+                <h2>SUPPLEMENT</h2>
+                <span>No more waiting around for multiple forwarders to get back to you only to be disappointed with their price.</span>
+            </div>
+            <div class="process-content" ng-click="selectProcess('cosmetic')">
+                <h2>COSMETICS</h2>
+                <span>No more waiting around for multiple forwarders to get back to you only to be disappointed with their price.</span>
+            </div>
+            <div class="process-content" ng-click="selectProcess('cloth')">
+                <h2>FASHION & CLOTHES</h2>
+                <span>Compare quickest, cheapest or first to arrive. Never pay more than you have to. Book in seconds.</span>
+            </div>
+            <div class="process-content" ng-click="selectProcess('electronic')">
+                <h2>ELECTRONIC PRODUCTS</h2>
+                <span>Real-time visibility for your shipments, respond instantly to required actions & receive notifications.</span>
+            </div>
+            <div class="process-content" ng-click="selectProcess('oversize')">
+                <h2>OVERSIZED AND OTHERS</h2>
+                <span>Unlock your logistics data. Uncover key business insights to optimise your supply chain.</span>
+            </div>
+        </div>
+    </div>
+    <div id="team"></div>
+</div>
+
+<div class="ourteam-container col-md-12">
+    <div class="ourteam-content">
+        <h1>OUR TEAM</h1>
+        <h4>As a market leader in global air freight forwarding, we have many agents.</h4>
+        <div class="ourteam-image">
+            <img id="team-sale" src='../images/ourteam_cau.jpg'/>
+        </div>
+        <h2>CAU NGUYEN</h2>
+        <span>GL has a menu of supply chain solutions that can optimize the effectiveness of your product promotion, and reduce the cost of your packaging and distribution as well as your carbon footprint.</span>
+        <div id="contact"></div>
+    </div>
+</div>
+
+<div class="contactus-container col-md-12">
+    <div class="contact-container" id="contact">
+        <div class="container-fluid no-padding">
+            <div class="col-md-4 col-sm-12 col-sx-12 form-container">
+                <h1>Contact Us</h1>
+                <form ng-submit="sendMail()" class="form-group">
+                    <input class="col-md-12 col-sm-12 col-sx-12" type="text" ng-model="mail.name" placeholder="Name*" ng-required="true" />
+                    <input class="col-md-12 col-sm-12 col-sx-12" type="email" ng-model="mail.email" placeholder="Email" ng-required="true" />
+                    <input class="col-md-12 col-sm-12 col-sx-12" type="text" ng-model="mail.phone" placeholder="Phone Number*" ng-required="true" />
+                    <input class="col-md-12 col-sm-12 col-sx-12" type="text" ng-model="mail.address" placeholder="Job Address*" ng-required="true" />
+                    <input class="col-md-12 col-sm-12 col-sx-12" type="text" ng-model="mail.message" placeholder="Message*" ng-required="true" />
+                    <button class="col-md-12 col-sm-12 col-sx-12" type="submit">Send my request</button>
+                </form>
+            </div>
+            <div class="col-md-8 col-sm-12 col-sx-12 map-container">
+                <iframe class="col-md-12 col-sm-12 col-sx-12"
+                        frameborder="0" style="border: 0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA_0tLqxQ7J-tszacPV5iJvsI9wnIGAYXU&q=12%20Maida%20Ave,%20Sunshine%20North,%20Vic%3020&zoom=16"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+

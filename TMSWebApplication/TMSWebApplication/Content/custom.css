@@ -1,0 +1,483 @@
+﻿/*--Commons Style--*/
+h1, h2 {
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+span {
+    font-size: 14px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-rigth {
+    float: right;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-background {
+    background-color: transparent;
+}
+
+.no-border {
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/*--Navbar Style--*/
+.navigation {
+    padding: 0 20px;
+    background-color: transparent;
+    border: none;
+}
+
+/*--Custom Bootstrap--*/
+.navbar-inverse .navbar-brand {
+    color: #232323;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #e28827;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #232323;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #e28827;
+    }
+
+.form-group input,
+.form-group button {
+    max-width: 400px;
+    margin: 5px;
+    outline: none;
+    border: none;
+}
+
+.form-group input {
+    padding-left: 10px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    font-weight: 100;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+    .form-group input::-webkit-input-placeholder {
+        color: #ffffff;
+    }
+
+.form-group button {
+    height: 40px;
+    padding: 10px 20px 10px 20px;
+    color: #333333;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+/*--Containers Style--*/
+.banner-container {
+    background: #1f1f1f;
+    height: 100%;
+    min-height: 768px;
+    position: relative;
+}
+
+    .banner-container .banner-content {
+        color: #ffffff;
+        text-align: center;
+    }
+
+        .banner-container .banner-content h1 {
+            margin-top: 100px;
+            color: #feba04;
+        }
+
+        .banner-content .calculate-container {
+            position: relative;
+            margin: 60px auto;
+            padding: 0 40px;
+            text-align: left;
+            width: 80%;
+        }
+
+        .calculate-container label {
+            margin: 5px 8px;
+        }
+
+       .calculate-container input[type=number], 
+       .calculate-container select {
+            font-size: 14px;
+            height: 40px;
+            margin: 5px 8px;
+            padding: 5px;
+        }
+
+        .calculate-container input[type=radio] {
+            position: relative;
+        }
+
+        .calculate-container label .small-input {
+            width: 80px;
+            margin: 5px 0;
+        }
+
+        .calculate-container label a {
+            color: #feba04;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            text-decoration: none;
+        }
+
+.banner-container .image-container {
+    background-color: #feba04;
+    background-size: cover;
+    height: 100%;
+    min-height: 768px;
+    position: relative;
+}
+
+    .banner-container .image-container::before {
+        background-image: url(../images/map.png);
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        min-height: 290px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: 100%;
+        content: '';
+        opacity: 0.35;
+    }
+
+        
+
+    .image-container .banner-image {
+        background-image: url(../images/flight_banner.png);
+        background-size: contain;
+        height: 200px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 35%;
+    }
+
+.partner-container {
+    
+}
+
+.service-container {
+    background: #232323;
+    color: antiquewhite;
+    padding: 30px 0;
+    text-align: center;
+}
+
+    .service-container h1 {
+        margin: auto;
+        width: 400px;
+    }
+
+    .service-container h2 {
+        color: #feba04;
+    }
+
+    .service-container .service-content {
+        margin: 30px auto;
+    }
+
+    .service-element {
+        background-color: #1f1f1f;
+        border: 1px solid #feba04;
+        height: 140px;
+        margin: 20px 30px;
+        text-align: left;
+        width: 320px;
+    }
+
+.service-content .service-icon {
+    background-size: cover;
+    height: 64px;
+    margin: 40px auto;
+    margin-right: 20px;
+    float: left;
+    width: 64px;
+}
+
+    .service-icon#packaging-icon {
+        background-image: url(../images/package-delivery.png);
+    }
+
+    .service-icon#transport-icon {
+        background-image: url(../images/package-transport-for-delivery.png);
+    }
+
+    .service-icon#ship-icon {
+        background-image: url(../images/boat-from-front-view.png);
+    }
+
+    .service-icon#logistic-icon {
+        background-image: url(../images/logistics-delivery-truck-in-movement.png);
+    }
+
+    .service-icon#flight-icon {
+        background-image: url(../images/air-transport.png);
+    }
+
+    .service-icon#delivery-icon {
+        background-image: url(../images/delivery-worker-giving-a-box-to-a-receiver.png);
+    }
+
+.process-container {
+    background-color: #feba04;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    text-align: center;
+    height: auto;
+}
+
+    .process-container h1 {
+        color: #232323;
+    }
+
+    .process-container .process-image {
+        background-size: cover;
+        height: 600px;
+        margin: 30px auto;
+        position: relative;
+        border-radius: 5px;
+    }
+
+.process-image#process-electronic {
+    background-image: url(../images/arc-16372-1_computer-devices-mobile-phone1425x780.jpg);
+    background-position: 50% 0;
+}
+
+.process-image#process-milk {
+    background-image: url(../images/powdered-milk.jpg);
+}
+
+.process-image#process-supply {
+    background-image: url(../images/supplement.jpg);
+}
+
+.process-image#process-cosmetic {
+    background-image: url(../images/cosmetic-feature.jpg);
+}
+
+.process-image#process-cloth {
+    background-image: url(../images/Mix-And-Match-Clothes-Properly.jpg);
+}
+
+.process-image#process-oversize {
+    background-image: url(../images/pallet-with-boxes-3d-model-low-poly-max.jpg);
+    background-position: 0 45%;
+}
+
+
+.process-container .process-session {
+    min-height: 640px;
+    position: relative;
+    margin: 60px 20px;
+}
+
+.process-session .process-option {
+    height: auto;
+    position: relative;
+}
+
+.process-option .process-content {
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    padding: 20px;
+    text-align: left;
+}
+
+    .process-option .process-content:hover {
+        background-color: #e28827;
+    }
+
+.process-option .process-content h2 {
+    margin-top: 0;
+}
+
+.testimonial-container {
+
+}
+
+.ourteam-container {
+    height: 500px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+    .ourteam-container::before {
+        background-image: url(../images/team.jpg);
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        min-height: 290px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: 100%;
+        content: '';
+        opacity: 0.35;
+    }
+
+    .ourteam-container .ourteam-content {
+        height: 100%;
+        margin: auto;
+        padding: 40px;
+        position: relative;
+        width: 60%;
+    }
+    
+    .ourteam-container .ourteam-content h1,
+    .ourteam-container .ourteam-content h2 {
+        color: #feba04;
+        margin: 10px auto;
+    }
+
+    .ourteam-container .ourteam-content h4 {
+        color: #ffffff;
+    }
+
+    .ourteam-container .ourteam-content span {
+        color: #ffffff;
+        max-width: 800px;
+    }
+
+.ourteam-content .ourteam-image {
+    height: 128px;
+    margin: 40px auto 20px auto;
+    width: 128px;
+}
+
+.ourteam-image img {
+    border: 2px solid #feba04;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+    .ourteam-image img#team-sale {
+        background: url(../images/ourteam_cau.jpg) no-repeat;
+        background-position: center;
+    }
+
+.contactus-container {
+    background-color: #232323;
+    height: 450px;
+}
+
+    .contactus-container h1 {
+        color: #feba04;
+        margin-left: 32%;
+    }
+
+    .contactus-container .map-container {
+        height: 450px;
+        padding: 20px 10px;
+    }
+
+        .contactus-container .map-container iframe {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+footer {
+    background-color: #232323;
+}
+
+footer p {
+    color: #808080;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+}
+
+.footer-container {
+    background-color: #feba04;
+    height: 300px;
+    padding: 50px;
+}
+
+    .footer-container .footer-left {
+        display: inline-block;
+        position: relative;
+    }
+
+    .footer-container .footer-right {
+        margin-top: 20px;
+        position: relative;
+    }
+    
+.footer-left .logo-left {
+    position: relative;
+    background-image: url(../images/logo-small.png);
+    background-size: cover;
+    height: 28px;
+    margin-left: 10px;
+    width: 64px;
+    float: left;
+}
+
+.footer-left .brandname-left {
+    position: relative;
+    font-size: 28px;
+    margin-left: 10px;
+}
