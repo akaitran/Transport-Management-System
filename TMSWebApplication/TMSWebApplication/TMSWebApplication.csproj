@@ -189,22 +189,31 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\custom.css" />
+    <Content Include="Content\font-awesome.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\about\1.jpg" />
+    <Content Include="images\about\2.jpg" />
+    <Content Include="images\about\3.jpg" />
+    <Content Include="images\about\4.jpg" />
     <Content Include="images\air-transport.png" />
     <Content Include="images\air-transport.svg" />
     <Content Include="images\arc-16372-1_computer-devices-mobile-phone1425x780.jpg" />
     <Content Include="images\boat-from-front-view.png" />
     <Content Include="images\boat-from-front-view.svg" />
+    <Content Include="images\cherri_wallpaper.jpg" />
     <Content Include="images\cosmetic-feature.jpg" />
     <Content Include="images\delivery-worker-giving-a-box-to-a-receiver.png" />
     <Content Include="images\delivery-worker-giving-a-box-to-a-receiver.svg" />
+    <Content Include="images\ecommerce-shipping.jpg" />
     <Content Include="images\flight_banner.png" />
     <Content Include="images\logistics-delivery-truck-in-movement.png" />
     <Content Include="images\logistics-delivery-truck-in-movement.svg" />
     <Content Include="images\logo-small.png" />
     <Content Include="images\logo.png" />
+    <Content Include="images\map-image.png" />
     <Content Include="images\map.png" />
     <Content Include="images\Mix-And-Match-Clothes-Properly.jpg" />
     <Content Include="images\ourteam_cau.jpg" />
@@ -225,6 +234,7 @@
     <Content Include="images\service3.png" />
     <Content Include="images\service4.png" />
     <Content Include="images\ship-icon.png" />
+    <Content Include="images\ship_banner.jpg" />
     <Content Include="images\supplement.jpg" />
     <Content Include="images\team.jpg" />
     <Content Include="Scripts\angular.js" />
@@ -253,6 +263,11 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\controllers\bannerController.js" />
     <Content Include="Scripts\controllers\mainController.js" />

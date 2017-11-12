@@ -35,6 +35,7 @@ namespace TMSWebApplication
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/custom.css",
+                      "~/Content/font-awesome.css",
                       "~/Content/site.css"));
         }
     }

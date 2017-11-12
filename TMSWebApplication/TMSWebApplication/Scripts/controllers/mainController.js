@@ -1,7 +1,7 @@
 var app = angular.module('app', []);
 
 app.controller('mainController', function ($scope, $http) {
-    $(document).ready(function () {
+    /*$(document).ready(function () {
         var scroll_start = 0;
         var startchange = $('#startchange');
         var offset = startchange.offset();
@@ -12,9 +12,9 @@ app.controller('mainController', function ($scope, $http) {
                     $(".navigation").css('background-color', '#feba04');
                     $(".navigation").css('width', '100%');
                 } else {
-                    $('.navigation').css('background-color', 'transparent');
+                    $('.navigation').css('background-color', 'white');
                 }
             });
         }
-    });
+    });*/
 });
