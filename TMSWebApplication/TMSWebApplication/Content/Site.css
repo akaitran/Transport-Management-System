@@ -1,14 +1,29 @@
-﻿body {
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    overflow-x: hidden;
+}
+
+body {
+    background-size: cover;
+    z-index: -1;
+    padding-right: 0;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    
+    min-height: 80%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
-    max-width: 280px;
 }

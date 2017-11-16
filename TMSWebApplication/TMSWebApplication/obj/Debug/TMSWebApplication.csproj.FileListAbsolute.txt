@@ -89,7 +89,7 @@ D:\Github\Transport-Management-System\TMSWebApplication\TMSWebApplication\bin\Mi
 D:\Github\Transport-Management-System\TMSWebApplication\TMSWebApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\Github\Transport-Management-System\TMSWebApplication\TMSWebApplication\bin\Microsoft.AI.WindowsServer.xml
 D:\Github\Transport-Management-System\TMSWebApplication\TMSWebApplication\bin\Microsoft.AI.Web.xml
-D:\Github\Transport-Management-System\TMSWebApplication\TMSWebApplication\obj\Debug\TMSWebApplication.csproj.CoreCompileInputs.cache
 D:\Github\Transport-Management-System\TMSWebApplication\TMSWebApplication\obj\Debug\TMSWebApplication.dll
 D:\Github\Transport-Management-System\TMSWebApplication\TMSWebApplication\obj\Debug\TMSWebApplication.pdb
 D:\Github\Transport-Management-System\TMSWebApplication\TMSWebApplication\obj\Debug\TMSWebApplication.csprojResolveAssemblyReference.cache
+D:\Github\transport-management-system\TMSWebApplication\TMSWebApplication\bin\TMSWebApplication.dll.config

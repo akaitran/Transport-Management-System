@@ -3,15 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" type="image/png" href="~/images/logo-small.png" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/angularjs")
     @Scripts.Render("~/bundles/controllers")
+
 </head>
 <body ng-app='app' ng-controller="mainController">
-    <div class="navbar navbar-inverse navbar-fixed-top navigation col-md-8">
-        <div class="container-fluid">
+    <!--<div class="navbar navbar-inverse navbar-fixed-top navigation col-md-12">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -23,20 +25,22 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("HOME", "Index", "Home", null, null, null, new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("CALCULATOR", "Index", "Home", null, null, "calculator", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("SERVICE", "Index", "Home", null, null, "service", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("PROCESS", "Index", "Home", null, null, "process", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("OURTEAM", "Index", "Home", null, null, "team", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("CONTACT", "Index", "Home", null, null, "contact", new { area = "" }, null)</li>
+                    
                     <li>@Html.ActionLink("API", "Index", "Help", null, null, null, new { area = "" }, null)</li>
+
+    
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="container-fluid body-content">
         @RenderBody()
         <footer>
-            <div class="footer-container">
+            <!--<div class="footer-container">
                     <div class="footer-left col-md-4">
                         <div class="logo-left"></div>
                         <h1 class="brandname-left">MAV EXPRESS</h1>
@@ -62,7 +66,7 @@
                             <h4>Media</h4>
                         </div>
                     </div>
-            </div>
+            </div>-->
             <p>&copy; @DateTime.Now.Year - MAV Express All Rights Reserved</p>
         </footer>
     </div>
