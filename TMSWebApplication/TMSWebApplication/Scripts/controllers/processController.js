@@ -1,7 +1,10 @@
 ﻿app.controller('processController', function ($scope, $http) {
-    $scope.processSelected = 'milk';
+    $scope.activeclass = ["active", "", "", "", ""];
 
-    $scope.selectProcess = function (process) {
-        $scope.processSelected = process;
-    };
+    $scope.eventActive = function (n) {
+        for (var i = 0; i < 5; i++) {
+            if (i == n) $scope.activeclass[i] = "active";
+            else $scope.activeclass[i] = "";
+        }
+    }
 });
